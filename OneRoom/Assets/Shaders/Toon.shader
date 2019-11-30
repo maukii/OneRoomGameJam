@@ -1,6 +1,9 @@
 ﻿Shader "Toon" {
 	//show values to edit in inspector
 	Properties{
+
+		[IntRange] _StencilRef("Stencil Reference Value", Range(0, 255)) = 0
+
 		[Header(Base Parameters)]
 	_Color("Tint", Color) = (1, 1, 1, 1)
 		_MainTex("Texture", 2D) = "white" {}
@@ -17,6 +20,12 @@
 		SubShader{
 		//the material is completely non-transparent and is rendered at the same time as the other opaque geometry
 		Tags{ "RenderType" = "Opaque" "Queue" = "Geometry" }
+
+		Stencil
+	{
+		Ref[_StencilRef]
+		Comp Equal
+	}
 
 		CGPROGRAM
 
