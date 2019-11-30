@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
     [Header("Target variables")]
     [SerializeField] private Transform targetTransform;
     [SerializeField] private float targetOffset = 10.0f;
-
-    [Header("Speed limits")]
-    [SerializeField] private float minSpeed = -35.0f;
-    [SerializeField] private float maxSpeed = 35.0f;
-    private float speed = 0.0f;
+    [SerializeField] private float speed = 35.0f;
+    private float input = 0.0f;
 
 
     private void Awake()
@@ -23,13 +19,12 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        speed += Input.GetAxis("Horizontal");
-        speed = Mathf.Clamp(speed, minSpeed, maxSpeed);
+        input = Input.GetAxis("Horizontal");
     }
 
     private void FixedUpdate()
     {
         if(targetTransform)
-            transform.RotateAround(targetTransform.position, -Vector3.up, speed * Time.deltaTime);
+            transform.RotateAround(targetTransform.position, -Vector3.up, input * speed * Time.fixedDeltaTime);
     }
 }
