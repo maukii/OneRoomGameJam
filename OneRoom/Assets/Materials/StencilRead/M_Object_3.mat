@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Object_3
-  m_Shader: {fileID: 4800000, guid: d7b50481c24fb6748acca56ff226a37b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 157623f78f36de8449a22bf86d734a6e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -68,12 +68,19 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
+    - _SpecularFalloff: 1
     - _SpecularHighlights: 1
+    - _SpecularSize: 0.183
     - _SrcBlend: 1
     - _StencilRef: 7
+    - _StepAmount: 7
+    - _StepWidth: 0.196
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.3726415, g: 1, b: 0.93938726, a: 1}
+    - _Color: {r: 0.4601781, g: 1, b: 0.37254906, a: 1}
     - _Colorasd: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowTint: {r: 0.021493427, g: 0.24938028, b: 0.6509434, a: 1}
+    - _Specular: {r: 1, g: 1, b: 1, a: 1}

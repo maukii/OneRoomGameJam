@@ -72,14 +72,14 @@ Material:
     - _SpecularHighlights: 1
     - _SpecularSize: 0.121
     - _SrcBlend: 1
-    - _StencilRef: 0
+    - _StencilRef: 6
     - _StepAmount: 3
     - _StepWidth: 0.226
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6799573, g: 0.7346783, b: 0.754717, a: 1}
+    - _Color: {r: 0.50462794, g: 0.71670943, b: 0.7924528, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShadowTint: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+    - _ShadowTint: {r: 0.25431648, g: 0.29470238, b: 0.4245283, a: 1}
     - _Specular: {r: 0.8490566, g: 0.81412524, b: 0.6768423, a: 1}
